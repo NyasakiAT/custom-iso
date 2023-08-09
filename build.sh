@@ -15,7 +15,7 @@ add(){
 build_repo () {
 	for pkg in *.pkg.tar.zst; do
 		echo "Adding " $pkg
-		repo-add $SCRIPT_PATH/archlive/custom-repo/custom.db.tar.gz $f
+		repo-add $SCRIPT_PATH/archlive/custom-repo/custom.db.tar.gz $pkg
 	done
 }
 

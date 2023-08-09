@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# ~/.xprofile
+
+sxhkd -c $HOME/.config/berry/sxhkdrc &
+tint2 &
+dunst &

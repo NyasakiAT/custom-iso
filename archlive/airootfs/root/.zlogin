@@ -4,8 +4,5 @@ if grep -Fqa 'accessibility=' /proc/cmdline &> /dev/null; then
 fi
 
 ~/.automated_script.sh
-chmod +x ~/.gnome_settings.sh && ~/.gnome_settings.sh
-
-GTK_THEME=Adwaita-dark firefox
 
 xinit

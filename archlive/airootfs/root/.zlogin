@@ -5,4 +5,7 @@ fi
 
 ~/.automated_script.sh
 chmod +x ~/.gnome_settings.sh && ~/.gnome_settings.sh
+
+GTK_THEME=Adwaita-dark firefox
+
 xinit

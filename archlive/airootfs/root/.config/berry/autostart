@@ -1,0 +1,9 @@
+#!/bin/bash
+berryc border_width 0
+berryc inner_border_width 0
+berryc top_gap 0
+
+exec sxhkd -c $HOME/.config/berry/sxhkdrc &
+exec $HOME/.config/polybar/launch.sh &
+exec dunst &
+exec feh --bg-fill ./wallpaper.png

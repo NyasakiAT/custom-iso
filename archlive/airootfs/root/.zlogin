@@ -5,4 +5,13 @@ fi
 
 ~/.automated_script.sh
 
-xinit
+chmod +x /root/.config/polybar/launch.sh
+
+GTK_THEME=Adwaita
+gtk-application-prefer-dark-theme = true
+gsettings set org.gnome.desktop.interface gtk-theme Fantome
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi

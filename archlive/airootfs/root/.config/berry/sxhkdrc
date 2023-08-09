@@ -1,0 +1,6 @@
+alt+d
+	rofi -modi drun,run -show drun
+alt+shift+e
+	berryc quit
+alt+shift+q
+	berryc window_close

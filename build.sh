@@ -22,6 +22,9 @@ build_repo () {
 echo "Building custom repo"
 cd $SCRIPT_PATH/archlive/custom-repo
 
+echo "Cleaning folder"
+sudo rm -R *
+
 add "https://aur.archlinux.org/berry.git"
 add "https://aur.archlinux.org/ungoogled-chromium-bin.git"
 
